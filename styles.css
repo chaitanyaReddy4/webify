@@ -1,0 +1,178 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Logo Styles */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    
+}
+
+/* College and Department Names */
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #1e3d58;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #ff7043;
+}
+
+/* Input Group Styles */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #0072ff;
+    outline: none;
+}
+
+/* Password Wrapper for Toggle Button */
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 0.9em;
+    color: #0072ff;
+    cursor: pointer;
+}
+
+.toggle-password:focus {
+    outline: none;
+}
+
+/* Forgot Password Link */
+#forgot-password {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    color: #0072ff;
+    text-decoration: none;
+    text-align: right;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Submit Button */
+#login-btn {
+    background-color: #0072ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+#login-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Error Messages */
+.error-msg {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .login-box {
+        padding: 30px 20px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    #login-btn {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
